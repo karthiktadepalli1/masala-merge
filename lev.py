@@ -76,7 +76,7 @@ def sort_words(string):
 def read_id_string_data(filename):
 
     # open and read data file -- ignore unicode errors -- non-unicode characters will be removed
-    f = open(filename, encoding='utf8', errors='ignore')
+    f = open(filename)
     csv = f.readlines()
     f.close()
     g = {}
